@@ -71,6 +71,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/love1" />
                 </LinearLayout>
@@ -97,13 +98,22 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Deskripsi :"
+                    android:textColor="#000000" />
+
+                <TextView
                     android:id="@+id/tvDesk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Deskripsi :" />
+                    android:layout_marginRight="10dp"
+                    android:text="ini deskripsi"
+                    android:textAlignment="inherit" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -112,20 +122,24 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="175dp"
+                        android:layout_width="186dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            />
+                            android:id="@+id/iLok"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/colorPrimary"
+                            android:backgroundTint="#ffffff"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/lokasi" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginLeft="5dp"
                             android:text="Alamat" />
                     </LinearLayout>
 
@@ -200,27 +214,27 @@
         android:id="@+id/buttonCart"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_above="@id/imageButton"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/imageButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="76dp"
         android:backgroundTint="#d35400"
-        android:text="Cart" />
+        android:text="Cart"<TextView
+    android:id="@+id/textViewToolbarWhistlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="14dp"
+    android:width="@android:dimen/thumbnail_width"
+    android:text="wishlist"
+    android:textAlignment="center"
+    android:textAllCaps="true"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:textColor="#ecf0f1"
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"/>
+        android:textColor="#ffffff" />
 
 
-    <TextView
-        android:id="@+id/textViewToolbarWhistlist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="14dp"
-        android:width="@android:dimen/thumbnail_width"
-        android:text="wishlist"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#ecf0f1"
-        android:layout_alignParentRight="true" />
+
 
 </RelativeLayout>
