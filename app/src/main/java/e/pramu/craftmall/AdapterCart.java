@@ -57,10 +57,9 @@ public class AdapterCart extends RecyclerView.Adapter <AdapterCart.CustomViewHol
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         private ImageView _imageView;
-        private TextView tvNamaBarang, tvHargaBarang, tvTotalHarga;
+        private TextView tvNamaBarang, tvHargaBarang, tvTotalHarga, kuantitas;
         private ImageButton btnTambah, btnKurang, btnHapus;
         private CheckBox cekHitung;
-        private EditText kuantitas;
         private CardView cv;
 
         public CustomViewHolder(View itemView) {
@@ -73,7 +72,7 @@ public class AdapterCart extends RecyclerView.Adapter <AdapterCart.CustomViewHol
             btnKurang = (ImageButton) itemView.findViewById(R.id.minQnt);
             btnHapus = (ImageButton) itemView.findViewById(R.id.btnHapus);
             cekHitung = (CheckBox) itemView.findViewById(R.id.checkBox);
-            kuantitas = (EditText) itemView.findViewById(R.id.kuantitasBrg);
+            kuantitas = (TextView) itemView.findViewById(R.id.kuantitasBrg);
             cv = (CardView) itemView.findViewById(R.id.cv);
         }
 
